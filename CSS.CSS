@@ -17,7 +17,7 @@ body {
   }
   .sidebar:hover {
     background-color: #555;
-  
+  }
   .sidebar ul {
     list-style-type: none;
     padding: 0;
@@ -30,14 +30,12 @@ body {
   .sidebar ul li a {
     color: #fff;
     text-decoration: none; 
-    transition: text-decoration 0.5s ease;
   }
   
   .sidebar ul li a:hover {
     text-decoration: underline;  
-  }
+     }
   
   .content {
     padding: 20px;
   }
-  
