@@ -13,7 +13,10 @@ body {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    transition: background-color 0.3s ease;
   }
+  .sidebar:hover {
+    background-color: #555;
   
   .sidebar ul {
     list-style-type: none;
@@ -26,11 +29,12 @@ body {
   
   .sidebar ul li a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; 
+    transition: text-decoration 0.5s ease;
   }
   
   .sidebar ul li a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;  
   }
   
   .content {
