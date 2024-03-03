@@ -13,7 +13,8 @@ body {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; 
+    
   }
   .sidebar:hover {
     background-color: #555;
@@ -38,21 +39,57 @@ body {
   
   .content {
     padding: 20px;
+  } 
+
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    cursor: pointer;
+    display: none;
   }
   @media (max-width: 768px) {
     .container {
       display: flex;
       flex-direction: column;
     }
+    .nav-toggle {
+      display: block; /* Show hamburger icon on mobile */
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+    }
   
+    .nav-toggle-label {
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+      padding: 20px;
+    }
+  
+    .nav-toggle:checked ~ .sidebar {
+      display: block; /* Show sidebar when checkbox is checked */
+      padding: 20px;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 70%;
+      max-width: 300px;
+      height: 100%;
+      overflow-y: auto;
+    }
     .sidebar {
       order: -1;
       width: 100%;
-      padding: 20px;
+      padding: 20px; 
+      display: none;
     }
   
     .content {
       order: 1;
       padding: 20px;
-    }
+    } 
   }
