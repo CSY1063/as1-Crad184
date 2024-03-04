@@ -56,14 +56,30 @@ body {
     padding: 20px;
     text-align: center;
   }
-
+ 
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .grid-item {
+    text-align: center;
+  }
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  .grid-label {
+    margin-top: 10px;
+  }
+ 
   @media (max-width: 768px) {
     .container {
       display: flex;
       flex-direction: column;
     }
     .nav-toggle {
-      display: block; /* Show hamburger icon on mobile */
+      display: block; 
       position: fixed;
       top: 20px;
       left: 20px;
@@ -78,7 +94,7 @@ body {
     }
   
     .nav-toggle:checked ~ .sidebar {
-      display: block; /* Show sidebar when checkbox is checked */
+      display: block; 
       padding: 20px;
       background-color: #333;
       position: fixed;
