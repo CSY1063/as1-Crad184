@@ -47,8 +47,16 @@ body {
   
   .nav-toggle-label {
     cursor: pointer;
-    display: none;
+    display: none; 
+  } 
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
   }
+
   @media (max-width: 768px) {
     .container {
       display: flex;
@@ -91,5 +99,14 @@ body {
     .content {
       order: 1;
       padding: 20px;
-    } 
+    }  
+    
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    
   }
